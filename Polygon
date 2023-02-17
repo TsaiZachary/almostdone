@@ -86,6 +86,20 @@ public class Polygon {
     public void setShapeName(String ShapeName){
         type = ShapeName;
     }
+    
+    public String toString(){
+    
+    if (length>0 && side > 2){
+    
+    return "The polygon has a length of " + length + " and it has " + side + " sides " + " and its name is " + type;
+    }
+    
+    else{
+    return "This is not a valid polygon"
+    }
+    
+    
+    }
 
 
 
